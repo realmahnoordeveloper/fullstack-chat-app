@@ -1,4 +1,5 @@
 import "dotenv/config";
+
 import dns from "dns";
 import cookieParser from "cookie-parser";
 import cors from "cors";
@@ -17,7 +18,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      process.env.FRONTEND_URL,
+      "https://fullstack-chat-app-yghb.vercel.app",
     ],
     credentials: true,
   })
